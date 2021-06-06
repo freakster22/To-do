@@ -1,16 +1,26 @@
-<DOCTYPE! HTML>
-<html lang=en_GB>
+<!DOCTYPE HTML>
+    <html lang=en_GB>
+
     <head>
-        <title>To-Do</title>
+        <title>📝To-Do</title>
         <meta charset="UTF-8">
-        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
 
     </head>
+
     <body>
-        <div class="ToDo-container">
-        <h2>To-Do Items</h2>
-        <input type="textbox" id="ToDo-items"><button id="add">+</button>
-        </div>
+        <div class="container ToDo-container">
+            <h2>To-Do Items</h2>
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control" aria-label="Large"
+                    aria-describedby="inputGroup-sizing-sm" id="input"><button class="btn btn-success btn-lg"
+                    id="add">➕Add</button>
+            </div>
+            <div id=ToDo-items>
+
+            </div>
+       </div>
+       <script src="main.js"></script>
     </body>
-</html>
+    </html>
