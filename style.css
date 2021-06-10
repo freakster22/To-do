@@ -15,9 +15,10 @@ body {
   padding-right: 0.5rem;
 }
 .addBtn:hover{
-  box-shadow: 0.5rem,0.7rem tomato;
   background-color: #fff;
   color: #000;
+  transition: cubic-bezier(.6,-0.28,.74,.05) 0.6s;
+  transform: scale3d(1.2);
 }
 .ToDo-container {
   width: 70%;
@@ -26,10 +27,12 @@ body {
   font-weight: bolder;
 }
 .itemDiv{
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 3fr 0.6fr 0.6fr; 
+  grid-template-rows: 1fr; 
   align-items: center;
-  background-color:rgba(231, 242, 171, 0.7);
+  background-color:rgba(231, 242, 171, 0.4);
   color: #201f1f;
   border-radius: 3rem;
   margin: 0.5rem;
@@ -38,40 +41,34 @@ body {
   text-transform: capitalize;
   margin: 1.5rem;
   font-size: 1.7rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: left;
   font-weight: lighter;
   line-height: 1.5rem;
   list-style-type: none;
-  justify-content: space-between;
   
 }
 .check, .trash{
   font-size: 1.5rem;
-  float: left;
   border: none;
   opacity: 1;
   background: transparent;
-  justify-content: flex-end;
 }
 .check{
   order: 2;
-  justify-content: flex-end;
 }
 .trash{
   order: 3;
-  justify-self: flex-end; 
 }
 .deleted{
-  transform: translateY(10rem) rotateZ(20deg);
-  transition: ease-out 2s;
+  transform: translateY(10rem) rotateZ(20deg) scale(0.5);
+  transition: all 0.8s ease-out;
+
 
 }
 .footer{
   display: none;
-  text-align: center;
-  width: 100%;
-  bottom: 0.7rem;
-  position: absolute;
-  line-height: 0.3rem;
+  background-color: rgba(255,230,230,0.2);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  line-height: 1rem;
+  padding: 0.2rem 0 0.2rem 2rem;
 }
