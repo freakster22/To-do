@@ -9,8 +9,8 @@ Next Task:
 -->>Add functionality to mark item completed and delete from the list -- done✔️
 -->>Add delete button -- done✔️
 -->>Add check button(Check will indicate done, and strike-through to represent) -- done✔️
--->>Add dark mode
 -->>Improvise background -- done✔️
--->>Button Customization
--->>Add Footer
---> Look n Feel of list itemss
+-->>Button Customization -- done✔️
+-->>Add Footer -- done✔️
+--> Look n Feel of list itemss -- done✔️
+-->>Add dark mode
