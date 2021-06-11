@@ -4,12 +4,15 @@ var ToDoItems = document.getElementById("ToDo-items");
 var itemContainer = document.getElementById("item-container");
 var input = document.getElementById("input");
 var footer = document.getElementsByClassName("footer");
+var dateTag = document.getElementById("Date");
+var timeTag = document.getElementById("Time");
+
 
 //--------------EVENT LISTENERS with FUNCTION-----------------------
 addToDo.addEventListener("click", addTodo);
 input.addEventListener("keyup", enterFunc);
 window.addEventListener("load", showFooter); //Footer
-
+window.addEventListener("load", showTime);
 
 //Add Button function
 function addTodo(e) {
@@ -58,6 +61,8 @@ function addTodo(e) {
             console.log("chek clicked");
             itemList.style.textDecoration = 'line-through';
             itemList.style.color = 'rgba(52, 74, 36, 0.6)';
+            itemList.style.transform = 'scale(0.8)';
+            itemList.style.transition = '0.7s ease';
 
         });
 
@@ -83,9 +88,34 @@ function enterFunc() {
 
 function showFooter() {
     var footer = document.querySelector(".footer");
-    console.log("Loaded");
     footer.style.display = "flex";
     footer.style.flexDirection = "column";
-    footer.style.position = "static";
+    footer.style.position = "relative";
     footer.style.marginTop = "25rem";
+    
+
+}
+//For Date & time
+function showTime(){
+    const date = new Date();
+    dateTag.classList.add("date");
+    timeTag.classList.add("time");
+    //timeTag.innerText = date.toLocaleTimeString(); //--- For short hand
+
+    // Using the below format for better visuals
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    
+    var time = h + ":" + m + ":" + s;
+
+    timeTag.innerHTML = time;
+    dateTag.innerHTML = date.toDateString();
+    setTimeout(showTime, 1000);
+    dateTag.classList.add("date");
+
 }
