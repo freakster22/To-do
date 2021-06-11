@@ -1,9 +1,37 @@
+@font-face {
+  font-family: 'Courgette';
+  src: url(Courgette.ttf);
+}
+@font-face {
+  font-family: 'super';
+  src: url(Super.ttf);
+}
+:root{
+  --cusFont: 'Courgette';
+  --headFont: 'super';
+}
 body {
   background-color: #ffaa5e;
   background-image: linear-gradient(147deg, #ed4b4b 0%, #ffaa5e  74%);
   box-sizing: border-box;
   min-height: 100vh;
+  font-family: var(--cusFont);
 
+}
+h1,h2,h3{
+  font-family: var(--headFont);
+}
+.date{
+  top: 0;
+position: absolute;
+margin-top: 1rem;
+left: 3rem;
+}
+.time{
+  top: 0;
+position: absolute;
+margin-top: 1rem;
+right: 3rem;
 }
 .addBtn{
   border: none;
@@ -61,8 +89,6 @@ body {
 .deleted{
   transform: translateY(10rem) rotateZ(20deg) scale(0.5);
   transition: all 0.8s ease-out;
-
-
 }
 .footer{
   display: none;
@@ -71,4 +97,5 @@ body {
   border-bottom-right-radius: 30px;
   line-height: 1rem;
   padding: 0.2rem 0 0.2rem 2rem;
+  bottom: -7rem;
 }
