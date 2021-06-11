@@ -1,5 +1,52 @@
+@font-face {
+  font-family: 'Courgette';
+  src: url(Courgette.ttf);
+}
+@font-face {
+  font-family: 'super';
+  src: url(Super.ttf);
+}
+:root{
+  --cusFont: 'Courgette';
+  --headFont: 'super';
+}
 body {
-  background-color: #ccc;
+  background-color: #ffaa5e;
+  background-image: linear-gradient(147deg, #ed4b4b 0%, #ffaa5e  74%);
+  box-sizing: border-box;
+  min-height: 100vh;
+  font-family: var(--cusFont);
+
+}
+h1,h2,h3{
+  font-family: var(--headFont);
+}
+.date{
+  top: 0;
+position: absolute;
+margin-top: 1rem;
+left: 3rem;
+}
+.time{
+  top: 0;
+position: absolute;
+margin-top: 1rem;
+right: 3rem;
+}
+.addBtn{
+  border: none;
+  font-size: 1.5rem;
+  background-color: #eb4d25;
+  color: #000;
+  font-family: "Gill Sans", sans-serif;
+  border-radius: 15px;
+  padding-right: 0.5rem;
+}
+.addBtn:hover{
+  background-color: #fff;
+  color: #000;
+  transition: cubic-bezier(.6,-0.28,.74,.05) 0.6s;
+  transform: scale3d(1.2);
 }
 .ToDo-container {
   width: 70%;
@@ -7,56 +54,48 @@ body {
   text-align: center;
   font-weight: bolder;
 }
+.itemDiv{
+  display: grid;
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 3fr 0.6fr 0.6fr; 
+  grid-template-rows: 1fr; 
+  align-items: center;
+  background-color:rgba(231, 242, 171, 0.4);
+  color: #201f1f;
+  border-radius: 3rem;
+  margin: 0.5rem;
+}
 .list {
   text-transform: capitalize;
-  margin: 2rem;
+  margin: 1.5rem;
   font-size: 1.7rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: left;
   font-weight: lighter;
   line-height: 1.5rem;
+  list-style-type: none;
+  
 }
-/*--- round check-----*/
-.round {
-  position: relative;
-}
-
-.round label {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 28px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 28px;
-}
-
-.round label:after {
-  border: 2px solid #fff;
-  border-top: none;
-  border-right: none;
-  content: "";
-  height: 6px;
-  left: 7px;
-  opacity: 0;
-  position: absolute;
-  top: 8px;
-  transform: rotate(-45deg);
-  width: 12px;
-}
-
-.round input[type="checkbox"] {
-  visibility: hidden;
-}
-
-.round input[type="checkbox"]:checked + label {
-  background-color: #66bb6a;
-  border-color: #66bb6a;
-}
-
-.round input[type="checkbox"]:checked + label:after {
+.check, .trash{
+  font-size: 1.5rem;
+  border: none;
   opacity: 1;
+  background: transparent;
 }
-/*--------- round check ends-------*/
+.check{
+  order: 2;
+}
+.trash{
+  order: 3;
+}
+.deleted{
+  transform: translateY(10rem) rotateZ(20deg) scale(0.5);
+  transition: all 0.8s ease-out;
+}
+.footer{
+  display: none;
+  background-color: rgba(255,230,230,0.2);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  line-height: 1rem;
+  padding: 0.2rem 0 0.2rem 2rem;
+  bottom: -7rem;
+}

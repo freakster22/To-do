@@ -11,14 +11,22 @@
 
     <body>
         <div class="container ToDo-container">
-            <h2>To-Do Items</h2>
+            <h1>To-Do Items</h1>
+            <h2 id ="Date"></h2>
+            <h2 id="Time"></h2>
             <div class="input-group input-group-lg">
                 <input type="text" class="form-control" id="input" placeholder="Enter items to add in To-Do List">
-                &nbsp;<button class="btn btn-success btn-lg" id="add">➕Add</button>
+                &nbsp;<button class="addBtn" id="add">➕Add</button>
             </div>
-            <div id=ToDo-items>
-                
+            <div id="item-container">
+                <ul id=ToDo-items>
+
+                </ul>
             </div>
+       </div>
+       <footer class= "footer container">
+           <p>Made with ❤️ by Arib Anwar</p>
+           <a href="https://www.github.com/freakster22">Github</a>
        </div>
        <script src="main.js"></script>
     </body>
