@@ -15,3 +15,8 @@ Next Task:<br />
 --> Look n Feel of list itemss -- done✔️<br />
 -->>Add dark mode<br />
 <br /><br />
+
+https://user-images.githubusercontent.com/55917218/124230744-0e02ae00-db2d-11eb-9871-787422869883.mp4
+<br />
+![To-do 1](https://user-images.githubusercontent.com/55917218/124230780-1955d980-db2d-11eb-91ae-712813474c03.png)<br />
+![To-do 2](https://user-images.githubusercontent.com/55917218/124230787-1b1f9d00-db2d-11eb-9050-59ebe18942ac.png)<br />
