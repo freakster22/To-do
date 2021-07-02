@@ -2,15 +2,16 @@
 To-Do app using JS
 Single click to mark the item complete
 Double click the item to delete
-
-Next Task:
--->>items align to left of the input --done✔️ 
--->>Add items on enter key -- done✔️
--->>Add functionality to mark item completed and delete from the list -- done✔️
--->>Add delete button -- done✔️
--->>Add check button(Check will indicate done, and strike-through to represent) -- done✔️
--->>Improvise background -- done✔️
--->>Button Customization -- done✔️
--->>Add Footer -- done✔️
---> Look n Feel of list itemss -- done✔️
--->>Add dark mode
+<br />
+Next Task:<br />
+-->>items align to left of the input --done✔️<br />
+-->>Add items on enter key -- done✔️<br />
+-->>Add functionality to mark item completed and delete from the list -- done✔️<br />
+-->>Add delete button -- done✔️<br />
+-->>Add check button(Check will indicate done, and strike-through to represent) -- done✔️<br />
+-->>Improvise background -- done✔️<br />
+-->>Button Customization -- done✔️<br />
+-->>Add Footer -- done✔️<br />
+--> Look n Feel of list itemss -- done✔️<br />
+-->>Add dark mode<br />
+<br /><br />
